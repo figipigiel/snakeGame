@@ -40,7 +40,6 @@ bool checkFruitPos(){
 
 void screen() { //funkcja odpowiadajaca za wyswietlenie planszy, w tym granic, owocu, glowy oraz ogona weza
 	system("cls"); // Przed wyswietleniem czegokolwiek konsola zostaje wyczyszczone
-	std::cout<<fruit[0]<<","<<fruit[1]<<std::endl<<std::endl;
 	for(int i=0; i<height; i++) {
 		for(int j=0; j<width; j++) {
 			if(i==0 || i==height-1) {
@@ -178,7 +177,7 @@ int main() {
 		screen();
 		input();
 		move();
-		Sleep(100);
+		Sleep(120);
 	}
 	if(isOver){
 		std::cout<<"Game Over!"<<std::endl;
